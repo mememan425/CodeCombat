@@ -43,10 +43,8 @@ while True:
         hero.moveXY(x, y)
         nearest = hero.findNearest(hero.findHazards())
         if (hero.distanceTo(nearest) >= threshold):
-            hero.debug(angle, hero.distanceTo(nearest))
+            #I removed the line here as it is not needed and breaks the code
             hero.moveXY(ix, iy)
             circle -= 1
             break
-
-
-
+#if this doesn't work keep submitting until it works if I find a way to fix that I will edit this again -- mememan425
